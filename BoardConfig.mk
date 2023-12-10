@@ -14,7 +14,9 @@
 # limitations under the License.
 
 ## Inherit from the common tree
+
 include device/samsung/exynos9810-common/BoardConfigCommon.mk
+include device/samsung/starlte-kernel/BoardConfigKernel.mk
 
 ## Inherit from the proprietary configuration
 include vendor/samsung/starlte/BoardConfigVendor.mk
@@ -31,7 +33,7 @@ TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
-TARGET_KERNEL_CONFIG := exynos9810-starlte_defconfig
+# TARGET_KERNEL_CONFIG := exynos9810-starlte_defconfig
 
 # properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

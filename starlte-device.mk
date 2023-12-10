@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+TARGET_KERNEL_DIR ?= device/samsung/starlte-kernel
+TARGET_BOARD_KERNEL_HEADERS := device/starlte/starlte-kernel/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/starlte/starlte-kernel/kernel-headers
+
 # Inherit from the common tree
 $(call inherit-product, device/samsung/exynos9810-common/common.mk)
 
